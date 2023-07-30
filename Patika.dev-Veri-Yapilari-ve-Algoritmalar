@@ -40,6 +40,53 @@ Sırasız bölüm: []
 Artık sırasız bölüm boş olduğundan ve tüm elemanlar sıralı bölümde doğru sırayla yer aldığından, dizi sıralı hale gelmiştir. Sonuç olarak, sıralanmış dizi şu şekildedir: [2, 6, 16, 18, 22, 27]
 
 
+Big-O gösterimini yazınız.
+Insertion Sort'un Big-O gösterimi, en kötü durumda yani tüm adımların gerçekleştiği durumda performansını ifade eder. Insertion Sort, en kötü durumda O(n^2) zaman karmaşıklığına sahiptir.
+
+Bu, dizi elemanlarının sayısının "n" olduğu durumda, ortalama olarak n^2 adımda sıralamanın tamamlanacağı anlamına gelir. Dolayısıyla, büyük veri kütleleri üzerinde uygulanacak olan Insertion Sort, verimlilik açısından dezavantajlıdır ve daha büyük veri kümeleri için daha uzun süreler gerektirebilir.
+
+İkinci bir bakış açısıyla, Insertion Sort'un en iyi durum karmaşıklığı (dizi zaten sıralı ise) O(n) olabilir ve ortalama durum karmaşıklığı yine O(n^2) olur. Ancak, her zaman en kötü durumu ele almak algoritmanın performansını en doğru şekilde değerlendirmemizi sağlar.
+Dizi sıralandıktan sonra, 18 sayısı aşağıdaki case'lerden hangisine girer:
+
+- Average case: Aradığımız sayının ortada olması.
+- Worst case: Aradığımız sayının sonda olması.
+- Best case: Aradığımız sayının dizinin en başında olması.
+
+Açıklamalar:
+
+1. Average case: Dizi sıralandığında, ortadaki eleman genellikle dizinin tamamına yakın bir noktada olacaktır. Dolayısıyla, 18 sayısının da dizinin ortasına yakın bir konumda olması beklenebilir.
+
+2. Worst case: Dizi sıralandığında, en büyük eleman dizinin sonunda olur ve aradığımız eleman en büyük elemandan daha büyükse, 18 sayısı dizinin sonunda olacaktır.
+
+3. Best case: Dizi sıralandığında, en küçük eleman dizinin başında olur ve aradığımız eleman en küçük elemandan daha küçükse, 18 sayısı dizinin başında olacaktır.
+
+Ancak, bu durumlar sadece 18 sayısı için geçerlidir ve diğer elemanlar için farklı sonuçlar elde edilebilir. Bu yüzden Insertion Sort'un zaman karmaşıklığı gösterimlerinde bu özel durumlar dikkate alınmaz. Genel olarak, Insertion Sort'un zaman karmaşıklığı, en kötü durumda O(n^2) ve en iyi durumda O(n) olur.
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Selection Sort algoritmasıyla [7, 3, 5, 8, 2, 9, 4, 15, 6] dizisini sıralayacak olursak ilk 4 adım şu şekildedir:
+
+**Adım 1:**
+Dizideki en küçük elemanı bulup ilk elemanla yer değiştirin.
+
+Dizi: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+**Adım 2:**
+Dizideki ikinci en küçük elemanı bulup ikinci elemanla yer değiştirin.
+
+Dizi: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+**Adım 3:**
+Dizideki üçüncü en küçük elemanı bulup üçüncü elemanla yer değiştirin.
+
+Dizi: [2, 3, 4, 8, 7, 9, 5, 15, 6]
+
+**Adım 4:**
+Dizideki dördüncü en küçük elemanı bulup dördüncü elemanla yer değiştirin.
+
+Dizi: [2, 3, 4, 5, 7, 9, 8, 15, 6]
+
+Bu adımlarla dizinin ilk 4 elemanı küçükten büyüğe doğru sıralanmış oldu. Selection Sort algoritması, her adımda en küçük elemanı bulup onu sırasıyla dizinin başına yerleştirerek sıralamayı gerçekleştirir. Bu algoritmanın zaman karmaşıklığı O(n^2) olduğu için büyük dizilerde verimlilik açısından tercih edilmeyebilir.
 
 
 
