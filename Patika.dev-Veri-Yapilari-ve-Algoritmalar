@@ -1,1 +1,45 @@
+[22,27,16,2,18,6] -> Insertion Sort
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+İlk olarak, verilen diziyi "Insertion Sort" algoritmasıyla sıralamak için adımları aşağıda sıralıyorum:
+
+Verilen dizi: [22, 27, 16, 2, 18, 6]
+
+Adım 1:
+Diziyi iki bölüme ayırın: Sıralı bölüm ve sırasız bölüm. İlk adımda, sıralı bölüm sadece ilk elemanı içerirken, sırasız bölüm diğer elemanları içerir.
+
+Sıralı bölüm: [22]
+Sırasız bölüm: [27, 16, 2, 18, 6]
+
+Adım 2:
+Sırasız bölümün ilk elemanını alın ve onu sıralı bölüme uygun konuma ekleyin.
+
+Sıralı bölüm: [22, 27]
+Sırasız bölüm: [16, 2, 18, 6]
+
+Adım 3:
+Sırasız bölümün ilk elemanını tekrar alın ve uygun konuma yerleştirin.
+
+Sıralı bölüm: [16, 22, 27]
+Sırasız bölüm: [2, 18, 6]
+
+Adım 4:
+Bu adımları sırasıyla tekrarlayın:
+
+Sıralı bölüm: [2, 16, 22, 27]
+Sırasız bölüm: [18, 6]
+
+Adım 5:
+Sıralı bölüm: [2, 16, 18, 22, 27]
+Sırasız bölüm: [6]
+
+Adım 6:
+Sıralı bölüm: [2, 6, 16, 18, 22, 27]
+Sırasız bölüm: []
+
+Artık sırasız bölüm boş olduğundan ve tüm elemanlar sıralı bölümde doğru sırayla yer aldığından, dizi sıralı hale gelmiştir. Sonuç olarak, sıralanmış dizi şu şekildedir: [2, 6, 16, 18, 22, 27]
+
+
+
+
 
