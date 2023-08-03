@@ -1,0 +1,25 @@
+Merge Sort, birleştirme (merge) ve sıralama (sort) adımlarını içeren bir sıralama algoritmasıdır. Aşağıda verilen dizi için Merge Sort işleminin aşamalarını adım adım açıklamak için aşağıdaki adımları takip edebiliriz:
+
+Verilen dizi: [16, 21, 11, 8, 12, 22]
+
+Adım 1: Diziyi ikiye bölelim:
+[16, 21, 11] ve [8, 12, 22]
+
+Adım 2: Her bir alt diziyi sıralayalım:
+[11, 16, 21] ve [8, 12, 22]
+
+Adım 3: Birleştirme işlemine geçelim:
+[11, 16, 21] ve [8, 12, 22] dizilerini birleştirelim.
+
+Adım 4: Her iki alt diziyi de birleştirerek sonuç dizisini elde edelim:
+[8, 11, 12, 16, 21, 22]
+
+Sonuç olarak, Merge Sort algoritması verilen dizi [16, 21, 11, 8, 12, 22] için yukarıdaki adımları takip ederek sıralanmış bir dizi olan [8, 11, 12, 16, 21, 22] elde eder.
+
+Merge Sort algoritmasının Big-O gösterimi "O(n log n)" dir.
+
+Burada "n" dizi elemanlarının sayısını temsil eder. Merge Sort algoritması, diziyi bölme ve birleştirme işlemleri için O(log n) zaman karmaşıklığına sahiptir. Her bölme adımında, dizi ikiye bölünür ve bu işlem logaritmik olarak tekrarlanır.
+
+Ayrıca, her alt diziyi birleştirme işlemi için O(n) zaman karmaşıklığı vardır. Çünkü iki alt dizi, eleman sayısına bağlı olarak birleştirilir ve her eleman sadece bir kere kıyaslanır ve birleştirilir.
+
+Bu nedenle, Merge Sort algoritmasının toplam zaman karmaşıklığı, bölme ve birleştirme işlemlerinin zaman karmaşıklığı olan O(n log n) olarak ifade edilir.
